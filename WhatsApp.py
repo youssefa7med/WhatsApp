@@ -1,6 +1,5 @@
 import streamlit as st
 import pywhatkit as kit
-import pyautogui
 from datetime import datetime
 import time
 
@@ -18,6 +17,17 @@ message = st.text_area("Enter your message:", "Hello! This is an automated messa
 # Input scheduled date and time (optional)
 scheduled_date = st.date_input("Select the date to schedule the message (optional)", value=None)
 scheduled_time = st.time_input("Select the time to schedule the message (optional)", value=None)
+
+# Function to close the browser tab
+def close_tab():
+    try:
+        import pyautogui
+        time.sleep(5)  # Short delay to ensure the message is sent
+        pyautogui.hotkey('ctrl', 'w')  # Close the tab
+    except ImportError:
+        st.warning("pyautogui is not available, please close the tab manually.")
+    except Exception as e:
+        st.error(f"Error closing the tab: {e}")
 
 # When button is clicked
 if st.button("Send Message"):
@@ -39,9 +49,8 @@ if st.button("Send Message"):
                 kit.sendwhatmsg_instantly(number, message, wait_time=10, tab_close=False)  # Keep tab open
                 st.write(f"Message sent to {number}")
 
-            # Close the tab using 'ctrl + w' after sending the message
-            time.sleep(5)  # Short delay to ensure the message is sent
-            pyautogui.hotkey('ctrl', 'w')  # Close the tab
+            # Close the tab (only if pyautogui is available)
+            close_tab()
 
         except Exception as e:
             st.error(f"Failed to send message to {number}: {e}")
