@@ -1,10 +1,10 @@
 import streamlit as st
 import pywhatkit as kit
 import time
-import pyautogui
 from datetime import datetime
 
 st.set_page_config(page_title="WhatsApp", page_icon="💬")
+
 # Streamlit app
 st.title("WhatsApp Message Sender")
 
@@ -40,9 +40,6 @@ if st.button("Send Message"):
 
             time.sleep(5)  # Short delay between sending messages to avoid issues
 
-            # Close the tab after sending the message using pyautogui
-            pyautogui.hotkey('ctrl', 'w')  # Simulate 'Ctrl + W' to close the tab
-            time.sleep(2)  # Short delay to ensure the tab is closed properly
 
         except Exception as e:
             st.error(f"Failed to send message to {number}: {e}")
