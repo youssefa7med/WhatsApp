@@ -1,7 +1,7 @@
 import streamlit as st
 import pywhatkit as kit
-import time
 from datetime import datetime
+import time
 
 st.set_page_config(page_title="WhatsApp", page_icon="💬")
 
@@ -39,7 +39,6 @@ if st.button("Send Message"):
                 st.write(f"Message sent to {number}")
 
             time.sleep(5)  # Short delay between sending messages to avoid issues
-
 
         except Exception as e:
             st.error(f"Failed to send message to {number}: {e}")
