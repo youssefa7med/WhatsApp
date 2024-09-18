@@ -268,3 +268,63 @@ Time: 4:35
 Phone Number: +2001000139417
 Message: Hello! This is an automated message.
 --------------------
+Date: 18/9/2024
+Time: 15:37
+Phone Number: +2001551763878
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 15:39
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 16:20
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 16:20
+Phone Number: +2001551763878
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 17:22
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 21:16
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 21:16
+Phone Number: +2001201774738
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 21:20
+Phone Number: +2001000139417
+Message: ازيك انا البوت
+--------------------
+Date: 18/9/2024
+Time: 21:24
+Phone Number: +2001000139417
+Message: ازيك انا البوت
+--------------------
+Date: 18/9/2024
+Time: 21:25
+Phone Number: +2001201774738
+Message: ازيك انا البوت
+--------------------
+Date: 18/9/2024
+Time: 23:39
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------
+Date: 18/9/2024
+Time: 23:40
+Phone Number: +2001000139417
+Message: Hello! This is an automated message.
+--------------------

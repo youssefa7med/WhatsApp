@@ -1,5 +1,6 @@
 import streamlit as st
 import pywhatkit as kit
+import pyautogui
 from datetime import datetime
 import time
 
@@ -38,7 +39,9 @@ if st.button("Send Message"):
                 kit.sendwhatmsg_instantly(number, message, wait_time=10, tab_close=False)  # Keep tab open
                 st.write(f"Message sent to {number}")
 
-            time.sleep(5)  # Short delay between sending messages to avoid issues
+            # Close the tab using 'ctrl + w' after sending the message
+            time.sleep(5)  # Short delay to ensure the message is sent
+            pyautogui.hotkey('ctrl', 'w')  # Close the tab
 
         except Exception as e:
             st.error(f"Failed to send message to {number}: {e}")
